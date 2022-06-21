@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 
 function Item({ item }) {
   const { url, MainImage, title, currency_code, price, quantity } = item;
-  if (!item?.MainImage?.url_570xN) return null;
 
   let formattedTitle;
   title.length < 50
